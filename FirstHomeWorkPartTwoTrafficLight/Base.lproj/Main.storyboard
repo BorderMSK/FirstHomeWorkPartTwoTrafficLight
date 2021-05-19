@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -18,8 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2h-yC-Cne">
-                                <rect key="frame" x="82" y="702" width="250" height="70"/>
+                                <rect key="frame" x="82" y="706.66666666666663" width="250" height="66.333333333333371"/>
                                 <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="B2h-yC-Cne" secondAttribute="height" multiplier="132:35" id="5gm-p6-hVe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -29,30 +32,27 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="9yd-cA-0gV">
-                                <rect key="frame" x="132" y="128" width="140" height="464"/>
+                                <rect key="frame" x="132" y="128.00000000000003" width="140" height="425.66666666666674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILB-KA-Tbg">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="127.33333333333333"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="M2L-Om-tKO"/>
-                                            <constraint firstAttribute="height" constant="140" id="Y4X-rc-8IA"/>
+                                            <constraint firstAttribute="width" secondItem="ILB-KA-Tbg" secondAttribute="height" multiplier="11:10" id="R6M-kB-pdP"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCf-TU-mJl">
-                                        <rect key="frame" x="0.0" y="162" width="140" height="140"/>
+                                        <rect key="frame" x="0.0" y="149.33333333333331" width="140" height="127.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="140" id="Goh-iu-66z"/>
-                                            <constraint firstAttribute="width" constant="140" id="N7T-S8-Bo6"/>
+                                            <constraint firstAttribute="width" secondItem="CCf-TU-mJl" secondAttribute="height" multiplier="11:10" id="Xpg-h2-Wqn"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ym-JW-RcZ">
-                                        <rect key="frame" x="0.0" y="324" width="140" height="140"/>
+                                        <rect key="frame" x="0.0" y="298.66666666666669" width="140" height="127"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="2bs-le-8Vw"/>
-                                            <constraint firstAttribute="height" constant="140" id="oS1-I5-Zpr"/>
+                                            <constraint firstAttribute="width" secondItem="9Ym-JW-RcZ" secondAttribute="height" multiplier="11:10" id="6wg-IF-dbX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -61,13 +61,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="B2h-yC-Cne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="0Rx-W0-LxD"/>
-                            <constraint firstItem="9yd-cA-0gV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Hjk-4b-Hsj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2h-yC-Cne" secondAttribute="bottom" constant="90" id="PZa-AN-n4U"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9yd-cA-0gV" secondAttribute="trailing" constant="142" id="Q0z-tG-dVC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B2h-yC-Cne" secondAttribute="trailing" constant="82" id="pxw-t4-msH"/>
-                            <constraint firstItem="9yd-cA-0gV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="w5Q-5O-5EO"/>
-                            <constraint firstItem="B2h-yC-Cne" firstAttribute="top" secondItem="9yd-cA-0gV" secondAttribute="bottom" constant="110" id="ye0-XK-ECD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9yd-cA-0gV" secondAttribute="trailing" constant="142" id="FHE-cU-dYg"/>
+                            <constraint firstItem="9yd-cA-0gV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Gmf-Pz-BK7"/>
+                            <constraint firstItem="9yd-cA-0gV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="WqB-f6-s5H"/>
+                            <constraint firstItem="B2h-yC-Cne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Z2P-hl-ate"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2h-yC-Cne" secondAttribute="bottom" constant="89" id="ll2-ja-OCW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B2h-yC-Cne" secondAttribute="trailing" constant="82" id="niT-jc-mp0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -79,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+            <point key="canvasLocation" x="18.22429906542056" y="77.753779697624196"/>
         </scene>
     </scenes>
     <resources>

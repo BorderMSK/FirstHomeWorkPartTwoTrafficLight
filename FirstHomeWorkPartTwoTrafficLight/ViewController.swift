@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     let alpha: CGFloat = 0.3
     
     @IBOutlet weak var redViewOutlet: UIView!
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-  
+        
         redViewOutlet.layer.cornerRadius = redViewOutlet.frame.width / 2
         redViewOutlet.alpha = alpha
         
@@ -28,12 +28,11 @@ class ViewController: UIViewController {
         greenViewOutlet.layer.cornerRadius = greenViewOutlet.frame.width / 2
         greenViewOutlet.alpha = alpha
     }
-
-
+    
     @IBAction func startButtom(_ sender: Any) {
         
         startButtomOutlet.setTitle("Next", for: .normal)
-        
+       
         if redViewOutlet.alpha == yellowViewOutlet.alpha {
             redViewOutlet.alpha = CGFloat(MAXFLOAT)
             greenViewOutlet.alpha = alpha
