@@ -17,11 +17,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TjT-01-4NO">
+                                <rect key="frame" x="137" y="101" width="140" height="460"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JkO-BQ-fEy">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="DU7-MP-lb0"/>
+                                            <constraint firstAttribute="width" constant="140" id="RiT-ky-blI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIB-q4-iLX">
+                                        <rect key="frame" x="0.0" y="160" width="140" height="140"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="43l-io-G6Z"/>
+                                            <constraint firstAttribute="height" constant="140" id="Fep-ZC-lRN"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqd-ub-gpr">
+                                        <rect key="frame" x="0.0" y="320" width="140" height="140"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="dab-y9-ls9"/>
+                                            <constraint firstAttribute="height" constant="140" id="lkC-XC-Txo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sIB-q4-iLX" firstAttribute="centerX" secondItem="TjT-01-4NO" secondAttribute="centerX" id="0o6-31-X1d"/>
+                                    <constraint firstItem="Fqd-ub-gpr" firstAttribute="centerX" secondItem="TjT-01-4NO" secondAttribute="centerX" id="C99-8m-erq"/>
+                                    <constraint firstItem="JkO-BQ-fEy" firstAttribute="centerX" secondItem="TjT-01-4NO" secondAttribute="centerX" id="kRQ-0a-wEQ"/>
+                                </constraints>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2h-yC-Cne">
-                                <rect key="frame" x="82" y="706.66666666666663" width="250" height="66.333333333333371"/>
+                                <rect key="frame" x="30" y="752" width="354" height="80"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="B2h-yC-Cne" secondAttribute="height" multiplier="132:35" id="5gm-p6-hVe"/>
+                                    <constraint firstAttribute="height" constant="80" id="Saz-5e-rgN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Start">
@@ -31,56 +65,28 @@
                                     <action selector="startButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6aq-fZ-nWY"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="9yd-cA-0gV">
-                                <rect key="frame" x="137" y="95" width="140.33333333333337" height="426"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILB-KA-Tbg">
-                                        <rect key="frame" x="0.0" y="0.0" width="140.33333333333334" height="127.33333333333333"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140.33333333333334" id="Vof-w1-k86"/>
-                                            <constraint firstAttribute="height" constant="127.33333333333333" id="igy-XA-os8"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCf-TU-mJl">
-                                        <rect key="frame" x="0.0" y="149.33333333333334" width="140.33333333333334" height="127.33333333333334"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="127.33333333333334" id="7jJ-29-IOs"/>
-                                            <constraint firstAttribute="width" constant="140.33333333333334" id="Mio-a2-K8L"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ym-JW-RcZ">
-                                        <rect key="frame" x="0.0" y="298.66666666666669" width="140.33333333333334" height="127.33333333333331"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140.33333333333334" id="08t-4c-DLf"/>
-                                            <constraint firstAttribute="height" constant="127.33333333333331" id="GqK-X1-dh1"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9yd-cA-0gV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="KhP-RI-iGY"/>
-                            <constraint firstItem="B2h-yC-Cne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Z2P-hl-ate"/>
-                            <constraint firstItem="9yd-cA-0gV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hsT-jS-Lnc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2h-yC-Cne" secondAttribute="bottom" constant="89" id="ll2-ja-OCW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B2h-yC-Cne" secondAttribute="trailing" constant="82" id="niT-jc-mp0"/>
+                            <constraint firstItem="TjT-01-4NO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="7Ys-nI-ae9"/>
+                            <constraint firstItem="B2h-yC-Cne" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LEn-OL-w16"/>
+                            <constraint firstItem="B2h-yC-Cne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="PEc-8r-lzl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2h-yC-Cne" secondAttribute="bottom" constant="30" id="TRY-EM-Cat"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="B2h-yC-Cne" secondAttribute="trailing" constant="30" id="bXe-pF-Zb7"/>
+                            <constraint firstItem="TjT-01-4NO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ePU-4C-x7a"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenViewOutlet" destination="9Ym-JW-RcZ" id="xyN-dp-SoL"/>
-                        <outlet property="redViewOutlet" destination="ILB-KA-Tbg" id="nzo-Ja-rt3"/>
+                        <outlet property="greenViewOutlet" destination="Fqd-ub-gpr" id="sJ4-NZ-2wU"/>
+                        <outlet property="redViewOutlet" destination="JkO-BQ-fEy" id="Kp4-Ss-GXx"/>
                         <outlet property="startButtomOutlet" destination="B2h-yC-Cne" id="FsZ-ky-5hb"/>
-                        <outlet property="yellowViewOutlet" destination="CCf-TU-mJl" id="VCZ-ba-YPx"/>
+                        <outlet property="yellowViewOutlet" destination="sIB-q4-iLX" id="7Lc-bX-nHJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.22429906542056" y="77.753779697624196"/>
+            <point key="canvasLocation" x="17.39130434782609" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>
