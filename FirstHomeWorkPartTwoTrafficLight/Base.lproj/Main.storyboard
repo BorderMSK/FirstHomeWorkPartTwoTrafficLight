@@ -45,11 +45,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="sIB-q4-iLX" firstAttribute="centerX" secondItem="TjT-01-4NO" secondAttribute="centerX" id="0o6-31-X1d"/>
-                                    <constraint firstItem="Fqd-ub-gpr" firstAttribute="centerX" secondItem="TjT-01-4NO" secondAttribute="centerX" id="C99-8m-erq"/>
-                                    <constraint firstItem="JkO-BQ-fEy" firstAttribute="centerX" secondItem="TjT-01-4NO" secondAttribute="centerX" id="kRQ-0a-wEQ"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2h-yC-Cne">
                                 <rect key="frame" x="30" y="752" width="354" height="80"/>
