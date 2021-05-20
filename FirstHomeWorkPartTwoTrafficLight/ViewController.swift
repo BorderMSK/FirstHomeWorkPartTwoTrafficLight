@@ -34,15 +34,15 @@ class ViewController: UIViewController {
         startButtomOutlet.setTitle("Next", for: .normal)
        
         if redViewOutlet.alpha == yellowViewOutlet.alpha {
-            redViewOutlet.alpha = CGFloat(MAXFLOAT)
+            redViewOutlet.alpha = CGFloat(1.0)
             greenViewOutlet.alpha = alpha
         }
         else if redViewOutlet.alpha > alpha && yellowViewOutlet.alpha == greenViewOutlet.alpha{
-            yellowViewOutlet.alpha = CGFloat(MAXFLOAT)
+            yellowViewOutlet.alpha = CGFloat(1.0)
             redViewOutlet.alpha = alpha
         }
         else if yellowViewOutlet.alpha > alpha && greenViewOutlet.alpha == redViewOutlet.alpha{
-            greenViewOutlet.alpha = CGFloat(MAXFLOAT)
+            greenViewOutlet.alpha = CGFloat(1.0)
             yellowViewOutlet.alpha = alpha
         }
     }

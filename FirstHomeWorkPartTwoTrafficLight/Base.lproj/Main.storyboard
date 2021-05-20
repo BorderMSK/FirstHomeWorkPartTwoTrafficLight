@@ -17,34 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TjT-01-4NO">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TjT-01-4NO">
                                 <rect key="frame" x="137" y="101" width="140" height="460"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JkO-BQ-fEy">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="140" id="DU7-MP-lb0"/>
-                                            <constraint firstAttribute="width" constant="140" id="RiT-ky-blI"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIB-q4-iLX">
                                         <rect key="frame" x="0.0" y="160" width="140" height="140"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="43l-io-G6Z"/>
-                                            <constraint firstAttribute="height" constant="140" id="Fep-ZC-lRN"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqd-ub-gpr">
                                         <rect key="frame" x="0.0" y="320" width="140" height="140"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="dab-y9-ls9"/>
-                                            <constraint firstAttribute="height" constant="140" id="lkC-XC-Txo"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="6qU-cY-1zI"/>
+                                    <constraint firstAttribute="height" constant="460" id="M7v-xS-E8Z"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2h-yC-Cne">
                                 <rect key="frame" x="30" y="752" width="354" height="80"/>
@@ -64,12 +56,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TjT-01-4NO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="7Ys-nI-ae9"/>
+                            <constraint firstItem="TjT-01-4NO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="1lP-0O-LE9"/>
                             <constraint firstItem="B2h-yC-Cne" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LEn-OL-w16"/>
                             <constraint firstItem="B2h-yC-Cne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="PEc-8r-lzl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2h-yC-Cne" secondAttribute="bottom" constant="30" id="TRY-EM-Cat"/>
+                            <constraint firstItem="TjT-01-4NO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UjT-UW-CNa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="B2h-yC-Cne" secondAttribute="trailing" constant="30" id="bXe-pF-Zb7"/>
-                            <constraint firstItem="TjT-01-4NO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ePU-4C-x7a"/>
                         </constraints>
                     </view>
                     <connections>
